@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Home - SPIZING</title>
+</head>
+<body id="body-site">
+    <header>
+        <div id="area-Logo"><img src="imagens/logo.png" id="logo"></div>
+        <div id="area-botao-cor">
+            <img src="imagens/botao-preto.png" alt="" id="botao-cor" onclick="trocaCor()">
+            <img src="imagens/botao-branco.png" alt="" id="botao-cor1" onclick="voltarCor()">
+        </div>
+    </header>
+
+    <nav>
+        <div id="area-banners">
+            <img src="imagens/banner1.png" id="banner-home">
+            <div id="areaSetas">
+                <div id="setaesq"><img src="imagens/setaesq.png" alt="" class="seta" onclick="carrossel()"></div>
+                <div id="setadir"><img src="imagens/setadir.png" alt="" class="seta" onclick="carrossel2()"></div>
+            </div>
+        </div>
+    </nav>
+
+    <article>
+        
+        <div class="area-imagem1" id="area-banner-spizing">
+            <img src="imagens/imagem-banner.png" id="banner-img">
+        </div>       
+        
+        <div class="area-imagem" id="area-monitor">
+            <a href="monitor.html" id="link-telas-prod">
+                <img src="imagens/monitor.png" alt="" class="produto-home" id="monitor">
+                <div id="texto-monitor" class="texto-produto">Monitor <br> +</div>
+            </a>
+        </div>        
+        
+        <div class="area-imagem" id="area-processador">
+            <a href="processador.html" id="link-telas-prod">
+                <img src="imagens/processador.png" alt="" class="produto-home" id="processador">
+                <div id="texto-processador" class="texto-produto">Processador <br> +</div>
+            </a>
+        </div> 
+              
+        <div class="area-imagem" id="area-placa-mae">
+            <a href="placa-mae.html" id="link-telas-prod">
+                <img src="imagens/placa-mae.png" alt="" class="produto-home" id="placa-mae">
+                <div id="texto-placa" class="texto-produto">Placa-mãe <br> +</div>
+            </a>
+        </div>
+        
+        <div class="area-imagem" id="area-gabinete">
+            <a href="gabinete.html" id="link-telas-prod">
+                <img src="imagens/gabinete.png" alt="" class="produto-home" id="gabinete">
+                <div id="texto-gabinete" class="texto-produto">Gabinete <br> +</div>
+            </a>
+        </div>               
+        
+        <div class="area-imagem" id="area-smartphone">
+            <a href="smartphone.html" id="link-telas-prod">
+                <img src="imagens/smartphone.png" alt="" class="produto-home" id="smartphone">
+                <div id="texto-smartphone" class="texto-produto">Smartphone <br> +</div>
+            </a>
+        </div>        
+        
+        <div class="area-imagem" id="area-acessorios">
+            <a href="mais-vendidos.html" id="link-telas-prod">
+                <img src="imagens/headset.png" alt="" class="produto-home" id="headset">
+                <div id="texto-headset" class="texto-produto">Mais Vendidos <br> +</div>
+            </a>
+        </div>      
+        
+        <div class="area-imagem1" id="area-mais-sobre">
+                <!--<img src="imagens/imagem-colorida.png" class="produto-home1" id="colorida"> -->
+                <div id="cont-mais-sobre">
+                    <img src="imagens/logo-quebra.png" id="logo-quebrada">
+                    <a href="sobre.html" class="link-sobre"><div id="botao-sobre">SOBRE NÓS</div></a>
+                </div>
+        </div>          
+        
+        <div class="area-imagem" id="area-teclado-mouse">
+            <a href="teclado-mouse.html" id="link-telas-prod">
+                <img src="imagens/teclado-mouse.png" alt="" class="produto-home" id="teclado-mouse">
+                <div id="texto-teclado-mouse" class="texto-produto">Teclado e <br> Mouse <br> +</div>
+            </a>
+        </div>
+        
+    </article>
+
+    <footer>
+        <div id="produto">
+            <h2 class="tituloRodape">Produto</h2>
+            <div id="conteudoRoda1">
+                <a href="monitor.html" class="elementoRoda">Monitor</a>
+                <a href="gabinete.html" class="elementoRoda">Gabinete</a>
+                <a href="" class="elementoRoda">Acessórios</a>
+                <a href="smartphone.html" class="elementoRoda">Smartphones</a>
+                <a href="teclado-mouse.html" class="elementoRoda">Teclado e mouse</a>
+                <a href="" class="elementoRoda">Placa de vídeo</a>
+                <a href="processador.html" class="elementoRoda">Processador</a>
+                <a href="placa-mae.html" class="elementoRoda">Placa mãe</a>
+            </div>
+        </div>
+        <div id="suporte">
+            <h2 class="tituloRodape">Suporte</h2>
+            <div id="conteudoRoda2">
+                <a href="contato.html" class="elementoRoda">Produto com Defeito</a>
+                <a href="contato.html" class="elementoRoda">Perguntas Frequentes</a>
+                <a href="contato.html" class="elementoRoda">Problemas com site</a>
+                <a href="contato.html" class="elementoRoda">Troca de Produto</a>
+                <a href="contato.html" class="elementoRoda">Chat cliente</a>
+                <a href="contato.html" class="elementoRoda">Problemas na compra</a>
+                <a href="contato.html" class="elementoRoda">Dúvida Sobre Produto</a>
+                <a href="contato.html" class="elementoRoda">Elogios/ melhorias</a>
+                <a href="sobre.html" class="elementoRoda">Sobre Nós</a>
+            </div>
+        </div>
+        <div id="forma">
+            <h2 class="tituloRodape">Forma de Pagamento</h2>
+            <div id="areaForma">
+                <div class="areaIcons"><img src="imagens/icon-visa.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-elo.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-pix.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-boleto.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-mastercard.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-american.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-hiper.png" alt="" class="iconsPag"></div>
+            </div>
+            
+        </div>
+        <div id="contato">
+            <h2 class="tituloRodape">Contato</h2>
+            <div id="areaContato">
+                <div class="areaIcons"><img src="imagens/icon-insta.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-face.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-twitter.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-whats.png" alt="" class="iconsPag"></div>
+                <div class="areaIcons"><img src="imagens/icon-gmail.png" alt="" class="iconsPag"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

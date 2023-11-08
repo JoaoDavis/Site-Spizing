@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Home - SPIZING</title>
+</head>
+<body id="body-site">
+    <header>
+        <div id="area-Logo"><a href="index.html" id="linkHome"><img src="imagens/logo.png" id="logo"></a></div>
+        <div id="area-botao-cor">
+            <img src="imagens/botao-preto.png" alt="" id="botao-cor" onclick="trocaCor()">
+            <img src="imagens/botao-branco.png" alt="" id="botao-cor1" onclick="voltarCor()">
+        </div>
+    </header>
+
+    <nav>
+        <div id="area-pesquisa">
+            <input type="text" id="barraPesquisa" placeholder="O que deseja?">
+            <a href="" class="icon-pesquisa"><img src="imagens/login.png" alt="" id="icon-login"></a>
+            <a href="" class="icon-pesquisa"><img src="imagens/carrinho.png" alt="" id="icon-carrinho"></a>
+        </div>
+    </nav>
+
+    <nav>
+        <div id="area-banners">
+            <img src="imagens/banner3.png" id="banner-home">
+            <div id="areaSetas">
+                <div id="setaesq"><img src="imagens/setaesq.png" alt="" class="seta" onclick="carrossel()"></div>
+                <div id="setadir"><img src="imagens/setadir.png" alt="" class="seta" onclick="carrossel2()"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="article-vendidos">
+        <div id="area-txt-mais">
+            <h2 id="titulo-mais">Mais Vendidos</h2>
+            <div id="barra-mais"></div>
+        </div>
+    </section>
+
+    <script src="js/script-vendidos.js"></script>
+</body>
+</html>

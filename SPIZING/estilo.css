@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap');
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #021020;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: grid;
+    grid: "1 1";
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 10px;
+    align-items: center;
+}
+
+nav {
+    margin: 0 0 40px 0;
+}
+
+#area-banners {
+    display: grid;
+    justify-items: center;
+}
+
+#banner-home {
+    width: 100vw;
+}
+
+#logo {
+    width: 15vw;
+}
+
+#botao-cor {
+    width: 4.3vw;
+}
+
+#botao-cor1 {
+    display: none;
+    width: 4.3vw;
+}
+
+#area-banner-spizing {
+    grid-area: banner-spizing;
+    background-color: transparent;
+}
+
+#area-monitor {
+    grid-area: monitor;
+}
+
+#area-processador {
+    grid-area: processador;
+    padding: 0 50px 0 50px;
+}
+
+#area-placa-mae {
+    grid-area: placa-mae;
+}
+
+
+#area-gabinete {
+    grid-area: gabinete;
+}
+
+#area-smartphone {
+    grid-area: smartphone;
+}
+
+#area-acessorios {
+    grid-area: acessorios;
+}
+
+#area-mais-sobre {
+    display: grid;
+    grid-area: mais-sobre;
+}
+
+#area-teclado-mouse {
+    grid-area: teclado-mouse;
+}
+
+article {
+    display: grid;
+    grid: "banner-spizing monitor processador"
+    "banner-spizing placa-mae processador"
+    "banner-spizing gabinete gabinete"
+    "smartphone acessorios mais-sobre"
+    "smartphone teclado-mouse teclado-mouse";
+    justify-content: center;
+    column-gap: 0.5vw;
+    row-gap: 1vh;
+}
+
+.area-imagem {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.area-imagem:hover {   
+    transition: 1.5s;
+    filter: brightness(60%);
+    background-color: #021020;
+    border: 2px solid #fff;
+}
+
+.produto-home:hover {
+    transition: 0.6s;
+    transform: scale(1.05);
+}
+
+#area-botao-cor {
+    display: flex;
+    justify-content: end;
+}
+
+#cont-mais-sobre {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imagens/imagem-colorida.png');
+    grid-template-rows: 2fr 1.5fr;
+    border-radius: 1.8vw;
+    row-gap: 2vw;
+    padding: 4.7vw 2vw;
+}
+
+#botao-sobre {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff;
+    padding: 0.6vw 0;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75vw;
+}
+
+.texto-produto {
+    display: grid;
+    position: fixed;
+    font-size: 1.04vw;
+    z-index: 100000;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Syncopate', sans-serif;
+    align-items: center;
+    width: 100%;
+}
+
+#texto-monitor {
+    font-family: 'Syncopate', sans-serif;
+}
+
+#link-telas-prod {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-processador {
+    margin-left: -4.5vw;
+} 
+
+#texto-smartphone {
+    margin-left: -0.31vw;
+}
+
+#texto-placa {
+    margin-left: -3.9vw;
+} 
+
+#texto-gabinete {
+    margin-left: -11.5vw;
+} 
+
+#texto-headset {
+    margin-left: -3.125vw;
+} 
+
+#texto-teclado-mouse {
+    margin-left: -8vw;
+}
+
+#logo-quebrada {
+    width: 7vw;
+}
+
+#colorida {
+    width: 19vw;
+}
+
+#banner-img {
+    width: 11vw;
+}
+
+#monitor {
+    width: 14vw;
+}
+
+#processador {
+    width: 10vw;
+}
+
+#placa-mae {
+    width: 6vw;
+}
+
+#gabinete {
+    width: 9vw;
+}
+
+#smartphone {
+    width: 10vw;
+}
+
+#headset {
+    width: 8vw;
+}
+
+#teclado-mouse {
+    width: 18vw;
+}
+
+#icon-login, #icon-carrinho {
+    width: 3vw;
+}
+
+#area-pesquisa {
+    border-top: 0.4vh solid #ffffff;
+    border-bottom: 0.4vh solid #ffffff;
+    padding: 0.3vh 0.8vw 0.3vh 0.8vw;
+    display: grid;
+    align-items: center;
+    grid: "1 1 1";
+    grid-template-columns: 12fr 1fr 1fr;
+}
+
+#barraPesquisa {
+    background-color: transparent;
+    border-image: url('imagens/colorida2.png') 1 30 1 60 repeat;
+    border-width: 0.6vh;
+    border-radius: 16px;
+    font-family: 'Syncopate', sans-serif;
+    padding: 0.8vh;
+    display: grid;
+    align-items: center;
+    color: #ffffff;
+    font-size: 0.6vw;
+}
+
+#barraPesquisa:focus, select:focus {
+    outline: 0;
+}
+
+#barraPesquisa::placeholder {
+    color: #979292;
+}
+
+.icon-pesquisa {
+    display: grid;
+    justify-items: end;
+}
+
+#icon-carrinho {
+    width: 2.8vw;
+}
+
+#icon-login:hover, #icon-carrinho:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.tituloProduto {
+    grid-area: titulo-produto;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.4vw;
+}
+
+.botao-comprar {
+    grid-area: botao-comprar;
+}
+
+.botao-comprar {
+    grid-area: botao-saiba;
+    border: 1px solid #ffffff;
+    padding: 0.2vw 0 0.2vw 0;
+}
+
+.botao-comprar, .botao-saiba {
+    font-size: 1vw;
+}
+
+.infoProduto {
+    display: grid;
+    grid: "titulo-produto titulo-produto"
+    "botao-saiba botao-comprar";
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.monitorImg {
+    width: 20vw;
+}
+
+#containerProdutos {
+    display: grid;
+    row-gap: 5vw;
+}
+
+#produtos-area {
+    display: grid;
+    justify-items: center;
+    grid: "1" "1";
+}
+
+.areaProdutos {
+    display: grid;
+    grid: "1 1";
+    column-gap: 10vw;
+    grid-template-columns: 1fr 2fr;
+}
+
+#ver-mais {
+    width: 100%;
+    display: grid;
+    justify-content: end;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#imgProd2 {
+    order: 1;
+    display: grid;
+    justify-content: center;
+}
+
+#imgProd4 {
+    order: 1;
+    display: grid;
+    justify-content: center;
+}
+
+#infoProd2 {
+    order: 0;
+}
+
+#infoProd4 {
+    order: 0;
+}
+
+#smart1 {
+    width: 14vw;
+}
+
+#botao-cor, #botao-cor1 {
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    grid: "1 1" "1 1";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5vh;
+    color: #ffffff;
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 10vh;
+    margin-bottom: 5vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tituloRodape {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1vw;
+    margin-top: 1vw;
+}
+
+#conteudoRoda1 {
+    display: grid;
+    grid: "1 1 1" 
+    "1 1 1" "1 1 1";
+    padding: 1.5vw 3vw 1.5vw 3vw;
+}
+
+#conteudoRoda2 {
+    display: grid;
+    grid: "1 1 1" 
+    "1 1 1" "1 1 1";
+    padding: 1.5vw 3vw 1.5vw 3vw;
+}
+
+.elementoRoda {
+    font-size: 0.8vw;
+}
+
+#areaForma {
+    display: grid;
+    grid: "1 1 1 1 1 1 1";
+    padding: 1.5vw 3vw 1.5vw 3vw;
+}
+
+.iconsPag {
+    background-color: #fff;
+    border-radius: 10000vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+    width: 1.6vw;
+}
+
+#areaContato {
+    display: grid;
+    grid: "1 1 1 1 1";
+    padding: 1.5vw 3vw 1.5vw 3vw;
+}
+
+#forma, #contato {
+    border-top: 0.2vw solid #ffffff;
+}
+
+#areaSetas {
+    display: grid;
+    width: 95%;
+    grid: "1 1";
+    margin-top: -22vw;
+}
+
+#setadir {
+    display: grid;
+    justify-content: end;
+    cursor: pointer;
+}
+
+#setaesq {
+    cursor: pointer;
+}
+
+.seta {
+    width: 3vw;
+}
+
+.link-sobre {
+    text-decoration: none;
+}
+
+#menu-sobre {
+    background-image: url('imagens/fundo-sobre.png');
+    width: 100%;
+    height: 5vh;
+    display: grid;
+    grid: "1 1 1";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-menu-sobre {
+    display: grid;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1vw;
+}
+
+.links-menu-sobre a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#imagem-trajetoria {
+    width: 25vw;
+}
+
+#imagem-qualidade {
+    width: 25vw;
+}
+
+#article-sobre {
+    display: grid;
+    grid: "1" "1" "1";
+    row-gap: 8vh;
+}
+
+.areas-sobre {
+    display: grid;
+    grid: "1 1";
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    color: #ffffff;
+    background-color: #031A33;
+    padding: 3vw 5vw;
+    border-radius: 1vw;
+}
+
+.titulo-sobre {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+.texto-sobre {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1vw;
+}
+
+.areas-sobre1 {
+    display: grid;
+    justify-items: center;
+    color: #ffffff;
+    background-color: #031A33;
+    padding: 3vw 5vw 10vw 5vw;
+    border-radius: 1vw;
+    row-gap: 2vw;
+}
+
+#area-lideranca {
+    display: grid;
+    grid: "1 1 1 1";
+    column-gap: 3vw;
+}
+
+.lideranca {
+    border-radius: 12vw;
+    background-color: #ffffff;
+    height: 2vw;
+    width: 2vw;
+    padding: 5vw;
+}
+
+.area-texto-sobre {
+    display: grid;
+}
+
+#area-txt-mais {
+    color: #ffffff;
+    display: grid;
+    grid: "1 1";
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 0.65vw;
+    width: 100%;
+    column-gap: 1vw;
+}
+
+#article-vendidos {
+    display: grid;
+    padding: 0 10vw;
+}
+
+#barra-mais {
+    background-color: #ffffff;
+    height: 0.2vw;
+    width: 100%;
+}
